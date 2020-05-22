@@ -10,7 +10,7 @@ Tested with:
 
 Use the following command to install using pip:
 ```
-pip install django-telethon-session
+pip install django-telethon-multisession
 ```
 
 ## Usage example
