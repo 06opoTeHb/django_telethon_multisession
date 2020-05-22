@@ -21,7 +21,7 @@ First add django telethon session to your installed apps in your django project 
 ```python
 INSTALLED_APPS = [
     ...,
-    'django_telethon_session2',
+    'django_telethon_multisession',
     ...
 ]
 ```
@@ -34,10 +34,10 @@ python manage.py migrate
 ```
 
 ### Use custom session
-Use the session in `django_telethon_session.sessions` to initialize telegram client:
+Use the session in `django_telethon_multisession.sessions` to initialize telegram client:
 ```python
-from django_telethon_session2.sessions import DjangoSession
-client = TelegramClient(DjangoSession())
+from django_telethon_multisession.sessions import DjangoMultiSession
+client = TelegramClient(DjangoMultiSession("session_name"))
 ```
 
 Feel free to send pull requests or report issues!
